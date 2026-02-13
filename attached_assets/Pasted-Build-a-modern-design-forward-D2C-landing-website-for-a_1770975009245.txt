@@ -1,0 +1,127 @@
+Build a modern, design-forward D2C landing website for a premium functional indulgence food brand.
+The website should feel culturally sharp, indie, typography-led, and visually confident — similar in energy to modern challenger consumer brands like Misfits or Olipop — but DO NOT copy any existing layouts, graphics, or branding. Create an original design with the same level of boldness and visual impact.
+The site must feel like a venture-backed consumer startup — not a generic Shopify wellness store.
+Prioritize editorial design, oversized typography, strong grid systems, negative space, and high-contrast sections.
+Avoid anything that feels corporate, templated, overly friendly, or “healthy-food beige.”
+This brand is modern, functional, indulgent, and built for high-performing urban consumers.
+
+DESIGN DIRECTION
+Create a visually striking interface with:
+* Oversized bold headlines
+* Editorial-style layout
+* Asymmetrical grid sections
+* Large product visuals
+* Smooth scrolling
+* Subtle micro-animations
+* Strong whitespace
+* Minimal clutter
+Typography should carry the brand.
+Use a combination of:
+* a modern grotesk sans-serif for impact
+* a refined serif for contrast
+The aesthetic should feel closer to a fashion brand than a food startup.
+
+COLOR SYSTEM
+Use a warm but premium palette:
+Base tones:
+* toasted cream
+* almond beige
+* soft honey
+* muted pistachio
+* deep cocoa
+Accent tones:
+* saffron gold
+* forest green
+* dark chocolate
+Avoid neon colors or tech-style gradients.
+No clinical greens.
+No ayurvedic browns.
+No startup blues.
+The site should feel rich and tactile.
+
+HERO SECTION (VERY IMPORTANT)
+Full-screen hero.
+Large typography.
+Minimal text.
+Create an emotionally powerful opening line:
+“Functional. But make it indulgent.”
+Subtext:
+Modern cakes crafted with functional ingredients — designed for your mood, mind, and momentum.
+Primary CTA: 👉 Shop First Drop
+Secondary CTA: 👉 Join Early Access
+Display the three products floating or stacked with dramatic lighting and soft shadows.
+The hero should immediately signal this is NOT a typical health brand.
+
+PRODUCT ARCHITECTURE SECTION
+Create a bold section introducing the three mental-state products.
+Use large typography for the state names.
+
+PRODUCT 1
+ZEN MODE Honey Vanilla Ashwagandha + Saffron
+Tagline: Soft bite. Quiet mind.
+Short descriptor: Made to take the edge off — without taking you off your game.
+
+PRODUCT 2
+LOCKED IN Pistachio Elaichi Spirulina + Moringa
+Tagline: Sharp mind. No crash.
+Short descriptor: Clean cognitive fuel disguised as dessert.
+
+PRODUCT 3
+CHARGED (Use this instead of saying shilajit loudly) Dark Chocolate Truffle Mineral adaptogens
+Tagline: Energy that lasts. Not spikes.
+Short descriptor: Deep, sustained energy built for long days.
+
+Each product should appear as a bold card with:
+* Large typography
+* Ingredient highlights
+* Flavor name
+* Quick benefit
+* Hover animation
+Make the section feel premium and editorial.
+
+BRAND PHILOSOPHY SECTION
+Large typography statement:
+“Your snacks should keep up with your life.”
+Supporting copy:
+No refined flour. No artificial flavors. No unnecessary additives.
+Just intelligent indulgence.
+
+DIFFERENTIATION SECTION
+Create a visually strong grid explaining the brand:
+* Functional ingredients
+* Craveable flavors
+* No jittery energy
+* No compromise
+Keep copy punchy — no long paragraphs.
+
+SOCIAL PROOF / FUTURE SPACE
+Leave a placeholder for:
+“As seen in” or “Trusted by high performers”
+Do not fabricate logos.
+
+EMAIL CAPTURE
+Create a strong early-access block:
+Headline:
+“First batch won’t last.”
+Subtext:
+Join the list for priority access.
+Field: Email + phone optional.
+CTA: 👉 Get Priority Access
+
+FOOTER
+Minimal.
+Logo Social links Contact Copyright
+No clutter.
+
+UX REQUIREMENTS
+Mobile-first design.
+Fast loading.
+Premium feel.
+Smooth scrolling.
+No heavy effects that reduce performance.
+The site should feel expensive but effortless.
+
+BRAND PERSONALITY
+Confident. Modern. Intelligent. Design-led. Slightly rebellious.
+Never loud. Never gimmicky. Never try-hard.
+This should feel like the homepage of a future category leader.

@@ -1,0 +1,236 @@
+Build a bold, design-forward D2C website for a modern indulgent food brand called:
+
+OG – Original Goodness
+
+OG is a premium, culturally sharp, design-led brand that creates smarter indulgent foods.
+
+The first product category is called:
+
+Supercakes
+
+The website must feel like a high-growth, venture-backed consumer brand. It should be typography-led, editorial, minimal, and confident — similar in energy to modern indie challenger brands — but completely original in layout, visuals, and branding.
+
+Do NOT copy any existing brand.
+
+This should feel premium, bold, and culturally relevant.
+
+BRAND POSITIONING
+
+OG stands for Original Goodness.
+
+It represents upgraded indulgence — food that tastes indulgent but is built with intelligent ingredients.
+
+The tone is:
+
+Confident
+Modern
+Slightly rebellious
+Premium
+Design-forward
+Not wellness-beige
+Not corporate
+Not ayurvedic
+
+HERO SECTION (Full Screen)
+
+Large, bold typography.
+
+Headline:
+
+NOT YOUR BASIC CAKE.
+
+Subheadline:
+
+Indulgent on the outside. Intelligent on the inside.
+
+Supporting line:
+
+Modern flavors crafted with ingredients that support your mood, focus, and energy.
+
+Primary CTA:
+👉 Shop Supercakes
+
+Secondary CTA:
+👉 Join the First Drop
+
+Show a bold hero image featuring all three Supercakes styled in a dramatic, editorial way with soft shadows and premium lighting.
+
+The hero must instantly communicate that this is not a traditional bakery brand.
+
+ABOUT OG SECTION
+
+Headline:
+
+Meet OG.
+
+Short copy:
+
+Original Goodness is built on one belief — indulgence should evolve.
+We make food that tastes like dessert, but works a little harder.
+
+Keep this concise and confident.
+
+PRODUCT CATEGORY SECTION
+
+Headline:
+
+SUPERCAKES
+
+Subtext:
+
+Three moods. Three flavors. Zero basics.
+
+Display three bold product cards.
+
+Each card should include:
+
+Product name (large typography)
+
+Flavor
+
+Functional ingredients
+
+One-line benefit statement
+
+A high-quality product image generated to match the flavor
+
+PRODUCT 1
+
+Name:
+ZEN MODE
+
+Flavor:
+Honey Vanilla
+
+Ingredients:
+Ashwagandha + Saffron
+
+Line:
+Soft bite. Quiet mind.
+
+Image instruction:
+Generate an image of a soft honey vanilla cake slice with golden saffron strands, light glaze, warm cream background, premium editorial lighting.
+
+PRODUCT 2
+
+Name:
+LOCKED IN
+
+Flavor:
+Pistachio Elaichi
+
+Ingredients:
+Spirulina + Moringa
+
+Line:
+Sharp mind. No crash.
+
+Image instruction:
+Generate an image of a rich pistachio cake slice with crushed pistachios on top, subtle green tones, elegant texture, minimal modern background, premium lighting.
+
+PRODUCT 3
+
+Name:
+CHARGED
+
+Flavor:
+Dark Chocolate Truffle
+
+Ingredients:
+Shilajit (mineral adaptogen)
+
+Line:
+Energy that lasts. Not spikes.
+
+Image instruction:
+Generate an image of a dense dark chocolate truffle cake slice with glossy chocolate glaze, deep cocoa tones, rich texture, dramatic shadows, luxury editorial style.
+
+WHY IT’S NOT BASIC SECTION
+
+Headline:
+
+Because cake should do more.
+
+Short grid-style bullets:
+
+• Built with intelligent ingredients
+• No refined flour
+• No artificial flavors
+• No unnecessary additives
+• Indulgence without compromise
+
+Keep it bold and punchy.
+
+No long paragraphs.
+
+BRAND STATEMENT SECTION
+
+Large typography:
+
+UPGRADE YOUR CAKE.
+
+Minimal copy underneath:
+
+This is indulgence, evolved.
+
+EARLY ACCESS SECTION
+
+Headline:
+
+First Batch. No Basics.
+
+Subtext:
+
+Join the OG list for priority access to Supercakes.
+
+Include:
+
+Email field
+Phone (optional)
+
+CTA:
+👉 Get Early Access
+
+DESIGN INSTRUCTIONS
+
+Use oversized bold typography
+
+Use strong serif + modern sans pairing
+
+Large negative space
+
+Asymmetrical grid
+
+Premium editorial feel
+
+Smooth scrolling
+
+Micro hover animations on product cards
+
+Mobile-first design
+
+Fast loading
+
+Color palette:
+
+Warm cream
+
+Soft honey
+
+Muted pistachio green
+
+Deep cocoa brown
+
+Saffron gold accents
+
+Avoid:
+
+Neon colors
+
+Tech startup gradients
+
+Ayurveda brown aesthetics
+
+Template Shopify look
+
+This should feel like the homepage of a future category leader in modern indulgent food.
