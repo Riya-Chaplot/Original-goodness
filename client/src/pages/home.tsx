@@ -115,14 +115,11 @@ function Hero() {
             className="og-display mt-4 text-[44px] font-black leading-[0.94] tracking-[-0.07em] sm:text-[72px]"
             data-testid="text-hero-headline"
           >
-            Functional.
-            <br />
-            But make it <span className="og-serif italic">indulgent</span>.
+            NOT YOUR BASIC CAKE.
           </h1>
 
-          <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg" data-testid="text-hero-subtext">
-            Modern cakes crafted with functional ingredients — designed for your mood, mind, and
-            momentum.
+          <p className="mt-5 max-w-xl text-lg font-semibold text-foreground sm:text-xl" data-testid="text-hero-subheading">
+            Indulgent on the outside. Intelligent on the inside.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row" data-testid="hero-cta">
