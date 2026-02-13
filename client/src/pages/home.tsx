@@ -123,15 +123,12 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row" data-testid="hero-cta">
-            <a href="#supercakes" className="og-button-primary" data-testid="button-shop-first-drop">
-              Shop First Drop <ArrowRight className="h-4 w-4" />
-            </a>
             <a
               href="#early-access"
-              className="og-button-secondary"
+              className="og-button-primary"
               data-testid="button-join-early-access"
             >
-              Join Early Access
+              Join Early Access <ArrowRight className="h-4 w-4" />
             </a>
           </div>
 
