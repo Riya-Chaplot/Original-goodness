@@ -4,6 +4,7 @@ import { ArrowRight, Instagram, Mail } from "lucide-react";
 import zenCake from "@/assets/images/cake-zen-honey-vanilla.png";
 import lockedInCake from "@/assets/images/cake-locked-in-pistachio-elaichi.png";
 import chargedCake from "@/assets/images/cake-charged-dark-chocolate.png";
+import cakeWithBenefitsRight from "@/assets/images/cake-with-benefits-right.png";
 
 const products = [
   {
@@ -12,7 +13,7 @@ const products = [
     flavor: "Honey Vanilla",
     ingredients: "Ashwagandha + Saffron",
     line: "Soft bite. Quiet mind.",
-    desc: "Made to take the edge off — without taking you off your game.",
+    desc: "Find your calm, without slowing down.",
     accent: "--og-honey",
     image: zenCake,
   },
@@ -22,7 +23,7 @@ const products = [
     flavor: "Pistachio Elaichi",
     ingredients: "Spirulina + Moringa",
     line: "Sharp mind. No crash.",
-    desc: "Clean cognitive fuel disguised as dessert.",
+    desc: "Focus that doesn’t fade.",
     accent: "--og-pistachio",
     image: lockedInCake,
   },
@@ -30,7 +31,7 @@ const products = [
     id: "03",
     name: "CHARGED",
     flavor: "Dark Chocolate Truffle",
-    ingredients: "Mineral adaptogens",
+    ingredients: "Shilajeet",
     line: "Energy that lasts. Not spikes.",
     desc: "Deep, sustained energy built for long days.",
     accent: "--og-cocoa",
@@ -86,8 +87,9 @@ function TopNav() {
           href="#early-access"
           className="og-button-primary"
           data-testid="button-join-first-drop"
+          style={{color: "white",padding:"12px 12px"}}
         >
-          Join the first drop <ArrowRight className="h-4 w-4" />
+          Join the first drop 
         </a>
       </div>
     </div>
@@ -96,216 +98,164 @@ function TopNav() {
 
 function Hero() {
   return (
-    <section className="og-noise relative" data-testid="section-hero">
+    <section
+      className="og-noise relative overflow-hidden bg-[#fff2e2]"
+      data-testid="section-hero"
+      style={{background: "rgb(127, 39, 255)"}}
+    >
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(900px 500px at 10% 10%, rgba(0,0,0,.08), transparent 55%), radial-gradient(700px 400px at 90% 30%, rgba(0,0,0,.06), transparent 50%)",
+            "radial-gradient(900px 500px at 10% 10%, rgba(255, 180, 120, .45), transparent 55%), radial-gradient(700px 400px at 90% 30%, rgba(170, 255, 200, .38), transparent 50%)",
         }}
       />
 
-      <div className="og-container relative grid min-h-[92vh] items-center gap-10 py-14 lg:grid-cols-12">
-        <div className="lg:col-span-6">
-          <div className="og-kicker text-muted-foreground" data-testid="text-hero-kicker">
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 -right-10 h-72 w-72 rounded-full bg-gradient-to-br from-amber-400/35 via-lime-300/35 to-emerald-400/35 blur-3xl"
+        animate={{ y: [0, 22, 0], rotate: [0, 6, -4, 0] }}
+        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-28 -left-8 h-80 w-80 rounded-full bg-gradient-to-tr from-fuchsia-400/28 via-orange-300/28 to-amber-400/28 blur-3xl"
+        animate={{ y: [0, -18, 0], rotate: [0, -5, 3, 0] }}
+        transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <div className="og-container relative min-h-[92vh] py-20">
+        <div className="grid items-center gap-10 lg:grid-cols-12">
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="mx-auto max-w-3xl text-left lg:col-span-7 lg:mx-0"
+          >
+          <div className="og-kicker text-muted-foreground" data-testid="text-hero-kicker" style={{color:"rgb(255,255,0)"}}>
             Premium functional indulgence
           </div>
 
           <h1
-            className="og-display mt-4 text-[44px] font-black leading-[0.94] tracking-[-0.07em] sm:text-[72px]"
+            className="og-display mt-4 text-[44px] font-black leading-[0.9] tracking-[-0.1em] text-foreground sm:text-[76px] md:text-[96px]"
             data-testid="text-hero-headline"
+            style={{color:"rgb(255,255,0)"}}
           >
             NOT YOUR BASIC CAKE.
           </h1>
 
-          <p className="mt-5 max-w-xl text-lg font-semibold text-foreground sm:text-xl" data-testid="text-hero-subheading">
-            Indulgent on the outside. Intelligent on the inside.
+          <p
+            className="mt-6 mx-auto max-w-2xl text-balance text-lg font-semibold text-foreground/90 sm:text-2xl"
+            data-testid="text-hero-subheading"
+          >
+            For people who don&apos;t do basic.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row" data-testid="hero-cta">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row" data-testid="hero-cta">
             <a
               href="#early-access"
               className="og-button-primary"
               data-testid="button-join-early-access"
+              style={{color: "white",padding:"12px 12px"}}
+              
             >
-              Join Early Access <ArrowRight className="h-4 w-4" />
+              Join Early Access 
             </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-2" data-testid="hero-pills">
-            <span className="og-pill" data-testid="pill-no-refined-flour">
-              No refined flour
+          <div className="mt-8 flex flex-wrap justify-center gap-3" data-testid="hero-pills">
+            <span className="og-pill text-sm sm:text-base" data-testid="pill-no-refined-flour">
+              No refined flour 🥖🚫
             </span>
-            <span className="og-pill" data-testid="pill-no-artificial-flavors">
-              No artificial flavors
+            <span className="og-pill text-sm sm:text-base" data-testid="pill-no-artificial-flavors">
+              No artificial flavors 🎨🚫
             </span>
-            <span className="og-pill" data-testid="pill-no-additives">
-              No unnecessary additives
+            <span className="og-pill text-sm sm:text-base" data-testid="pill-no-additives">
+              No unnecessary additives 🧪🚫
+            </span>
+            <span className="og-pill text-sm sm:text-base" data-testid="pill-no-eggs">
+              No eggs 🥚🚫
+            </span>
+            <span className="og-pill text-sm sm:text-base" data-testid="pill-no-sugar">
+              No sugar 🍬🚫
             </span>
           </div>
-        </div>
 
-        <div className="lg:col-span-6" data-testid="hero-products">
-          <div className="grid gap-5 sm:grid-cols-2">
+          <div className="mt-12 grid gap-5 md:grid-cols-2" data-testid="hero-quirky-graphics">
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="og-card og-hover-raise rounded-[28px] p-4 sm:col-span-2"
-              data-testid="card-hero-product-01"
+              initial={{ opacity: 0, y: 20, rotate: -2 }}
+              animate={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="og-card relative overflow-hidden rounded-3xl p-6 sm:p-8 text-left min-h-[220px]"
             >
-              <div className="flex items-center justify-between">
-                <div className="og-kicker text-muted-foreground" data-testid="text-hero-product-01-id">
-                  01
-                </div>
-                <div className="text-xs font-semibold" data-testid="text-hero-product-01-state">
-                  Zen
-                </div>
+              <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/45 to-orange-300/45 blur-3xl" />
+              <div className="og-kicker text-[11px] sm:text-xs uppercase tracking-[0.28em] text-foreground/80">
+                OUTSIDE
               </div>
-
-              <div className="mt-2 flex items-end justify-between gap-4">
-                <div>
-                  <div
-                    className="og-display text-2xl font-black tracking-[-0.06em]"
-                    data-testid="text-hero-product-01-name"
-                  >
-                    ZEN MODE
-                  </div>
-                  <div className="text-sm text-muted-foreground" data-testid="text-hero-product-01-flavor">
-                    Honey Vanilla
-                  </div>
-                </div>
-
-                <span
-                  className="inline-flex h-9 items-center rounded-full px-3 text-xs font-semibold"
-                  style={{
-                    background: "rgba(0,0,0,.08)",
-                  }}
-                  data-testid="badge-hero-product-01-ingredients"
-                >
-                  Ashwagandha + Saffron
-                </span>
+              <div className="mt-3 og-display text-xl sm:text-2xl md:text-3xl font-black tracking-[-0.08em]">
+                LOOKS LIKE A
+                <br className="hidden sm:block" /> CHEAT DAY. 🎉🍰
               </div>
-
-              <div className="mt-4 grid gap-4 sm:grid-cols-12">
-                <div className="sm:col-span-5">
-                  <p className="text-sm text-muted-foreground" data-testid="text-hero-product-01-line">
-                    Soft bite. Quiet mind.
-                  </p>
-                </div>
-                <div className="sm:col-span-7">
-                  <img
-                    src={zenCake}
-                    alt="Honey vanilla cake"
-                    className="og-product-img h-44 w-full object-cover"
-                    data-testid="img-hero-product-01"
-                    loading="eager"
-                  />
-                </div>
-              </div>
+              <p className="mt-4 text-sm sm:text-base font-semibold text-foreground/90">
+                Big frosting, loud layers, zero shy vibes. Cakes that look like a full-blown
+                celebration even when it&apos;s just a Tuesday.
+              </p>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.06 }}
-              className="og-card og-hover-raise rounded-[28px] p-4"
-              data-testid="card-hero-product-02"
+              initial={{ opacity: 0, y: 22, rotate: 1 }}
+              animate={{ opacity: 1, y: 0, rotate: 0 }}
+              transition={{ duration: 0.7, delay: 0.25 }}
+              className="og-card relative overflow-hidden rounded-3xl p-6 sm:p-8 text-left min-h-[220px]"
             >
-              <div className="flex items-center justify-between">
-                <div className="og-kicker text-muted-foreground" data-testid="text-hero-product-02-id">
-                  02
-                </div>
-                <div className="text-xs font-semibold" data-testid="text-hero-product-02-state">
-                  Focus
-                </div>
+              <div className="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-gradient-to-tr from-emerald-400/45 to-lime-300/45 blur-3xl" />
+              <div className="og-kicker text-[11px] sm:text-xs uppercase tracking-[0.28em] text-foreground/80">
+                INSIDE
               </div>
-
-              <div className="mt-2">
-                <div
-                  className="og-display text-2xl font-black tracking-[-0.06em]"
-                  data-testid="text-hero-product-02-name"
-                >
-                  LOCKED IN
-                </div>
-                <div className="text-sm text-muted-foreground" data-testid="text-hero-product-02-flavor">
-                  Pistachio Elaichi
-                </div>
+              <div className="mt-3 og-display text-xl sm:text-2xl md:text-3xl font-black tracking-[-0.08em]">
+                HERB-POWERED
+                <br className="hidden sm:block" /> FUNCTIONAL FUEL. 🌿⚡️
               </div>
+              <p className="mt-4 text-sm sm:text-base font-semibold text-foreground/90">
+                Ashwagandha for calm focus, shilajeet for deep, steady energy, spirulina and
+                moringa for clean, green support — stacked into every slice so dessert actually
+                does something for you.
+              </p>
 
-              <img
-                src={lockedInCake}
-                alt="Pistachio elaichi cake"
-                className="og-product-img mt-4 h-40 w-full object-cover"
-                data-testid="img-hero-product-02"
-                loading="eager"
-              />
-
-              <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
-                <span
-                  className="inline-flex rounded-full border px-3 py-1 text-xs font-semibold"
-                  style={{ background: "rgba(255,255,255,.55)" }}
-                  data-testid="badge-hero-product-02-ingredients"
-                >
-                  Spirulina + Moringa
-                </span>
-                <span className="text-xs text-muted-foreground" data-testid="text-hero-product-02-line">
-                  Sharp mind. No crash.
-                </span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.1 }}
-              className="og-card og-hover-raise rounded-[28px] p-4"
-              data-testid="card-hero-product-03"
-            >
-              <div className="flex items-center justify-between">
-                <div className="og-kicker text-muted-foreground" data-testid="text-hero-product-03-id">
-                  03
-                </div>
-                <div className="text-xs font-semibold" data-testid="text-hero-product-03-state">
-                  Charge
-                </div>
-              </div>
-
-              <div className="mt-2">
-                <div
-                  className="og-display text-2xl font-black tracking-[-0.06em]"
-                  data-testid="text-hero-product-03-name"
-                >
-                  CHARGED
-                </div>
-                <div className="text-sm text-muted-foreground" data-testid="text-hero-product-03-flavor">
-                  Dark Chocolate Truffle
-                </div>
-              </div>
-
-              <img
-                src={chargedCake}
-                alt="Dark chocolate truffle cake"
-                className="og-product-img mt-4 h-40 w-full object-cover"
-                data-testid="img-hero-product-03"
-                loading="eager"
-              />
-
-              <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
-                <span
-                  className="inline-flex rounded-full border px-3 py-1 text-xs font-semibold"
-                  style={{ background: "rgba(255,255,255,.55)" }}
-                  data-testid="badge-hero-product-03-ingredients"
-                >
-                  Mineral adaptogens
-                </span>
-                <span className="text-xs text-muted-foreground" data-testid="text-hero-product-03-line">
-                  Energy that lasts.
-                </span>
+              <div className="mt-4 flex flex-wrap gap-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-foreground/75">
+                <span className="rounded-full bg-background/70 px-3 py-1">ASHWAGANDHA</span>
+                <span className="rounded-full bg-background/70 px-3 py-1">SHILAJEET</span>
+                <span className="rounded-full bg-background/70 px-3 py-1">SPIRULINA</span>
+                <span className="rounded-full bg-background/70 px-3 py-1">MORINGA</span>
               </div>
             </motion.div>
           </div>
+          </motion.div>
+
+          {/* empty right grid column reserved for hero image on large screens */}
+          <div className="hidden lg:col-span-5 lg:block" />
         </div>
+      </div>
+
+      {/* Mobile hero image below text */}
+      <div className="mt-6 px-6 pb-10 lg:hidden">
+        <img
+          src={cakeWithBenefitsRight}
+          alt="Cake with benefits hero visual"
+          className="mx-auto w-full max-w-md rounded-[32px] object-contain"
+          loading="eager"
+        />
+      </div>
+
+      {/* Fixed right-side hero image on large screens */}
+      <div className="pointer-events-none absolute inset-y-16 right-0 hidden min-w-[280px] lg:flex lg:w-[32%] lg:items-center lg:justify-end">
+        <img
+          src={cakeWithBenefitsRight}
+          alt="Cake with benefits hero visual"
+          className="max-h-full w-auto object-contain"
+          loading="eager"
+          style={{border:"aqua",borderStyle:"dashed",borderRadius:"44px"}}
+        />
       </div>
     </section>
   );
@@ -328,7 +278,7 @@ function Supercakes() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-5 md:grid-cols-3" data-testid="grid-products">
+          <div className="mt-10 grid gap-5 md:grid-cols-3" data-testid="grid-products">
         {products.map((p) => (
           <article
             key={p.id}
@@ -341,7 +291,7 @@ function Supercakes() {
                   {p.id}
                 </div>
                 <div
-                  className="og-display mt-2 text-3xl font-black tracking-[-0.06em]"
+                  className="og-display mt-2 text-3xl font-black tracking-[-0.06em] whitespace-nowrap"
                   data-testid={`text-product-name-${p.id}`}
                 >
                   {p.name}
@@ -363,15 +313,15 @@ function Supercakes() {
               </span>
             </div>
 
-            <div className="mt-4">
-              <img
-                src={p.image}
-                alt={`${p.flavor} cake`}
-                className="og-product-img h-44 w-full object-cover"
-                data-testid={`img-product-${p.id}`}
-                loading="lazy"
-              />
-            </div>
+          <div className="mt-4 overflow-hidden rounded-3xl">
+            <img
+              src={p.image}
+              alt={`${p.flavor} cake`}
+              className="og-product-img block h-auto w-full"
+              data-testid={`img-product-${p.id}`}
+              loading="lazy"
+            />
+          </div>
 
             <div className="mt-4" data-testid={`block-product-copy-${p.id}`}>
               <div className="text-sm font-semibold" data-testid={`text-product-line-${p.id}`}>
@@ -382,7 +332,11 @@ function Supercakes() {
               </p>
             </div>
 
-            <div className="mt-5 flex items-center justify-between">
+            <div className="mt-5 flex items-center justify-between gap-3">
+              <span className="text-sm font-semibold" data-testid={`text-product-price-${p.id}`}>
+                ₹50
+              </span>
+
               <a
                 href="#early-access"
                 className="text-sm font-semibold underline underline-offset-4 opacity-90 transition group-hover:opacity-100"
@@ -390,7 +344,7 @@ function Supercakes() {
               >
                 Get priority access
               </a>
-
+{/* 
               <span
                 className="inline-flex h-9 items-center rounded-full px-3 text-xs font-semibold"
                 style={{
@@ -400,7 +354,7 @@ function Supercakes() {
                 data-testid={`badge-product-accent-${p.id}`}
               >
                 Mood-led
-              </span>
+              </span> */}
             </div>
           </article>
         ))}
@@ -418,44 +372,66 @@ function WhyUs() {
   ] as const;
 
   return (
-    <section id="why-us" className="og-container py-20" data-testid="section-why-us">
-      <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-        <div className="lg:col-span-6">
-          <div className="og-kicker text-muted-foreground" data-testid="text-why-us-kicker">
-            Why us
-          </div>
-          <h2
-            className="og-display mt-3 text-4xl font-black leading-[0.98] tracking-[-0.06em] sm:text-6xl"
-            data-testid="text-why-us-title"
-          >
-            Your snacks should
-            <br />
-            keep up with your life.
-          </h2>
-        </div>
-        <div className="lg:col-span-6">
-          <p className="max-w-xl text-muted-foreground" data-testid="text-why-us-subtext">
-            No refined flour. No artificial flavors. No unnecessary additives. Just intelligent
-            indulgence.
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-10 grid gap-5 md:grid-cols-2" data-testid="grid-why-us">
-        {items.map((it) => (
-          <div
-            key={it.title}
-            className="og-card rounded-[28px] p-6"
-            data-testid={`card-why-us-${it.title.replace(/\s+/g, "-").toLowerCase()}`}
-          >
-            <div className="og-display text-2xl font-black tracking-[-0.05em]" data-testid={`text-why-us-item-title-${it.title.replace(/\s+/g, "-").toLowerCase()}`}>
-              {it.title}
+    <section
+      id="why-us"
+      className="py-20"
+      data-testid="section-why-us"
+      style={{ backgroundColor: "rgb(127, 39, 255)" }}
+    >
+      <div className="og-container">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-6">
+            <div
+              className="og-kicker text-muted-foreground"
+              data-testid="text-why-us-kicker"
+              style={{ color: "rgb(255, 255, 0)" }}
+            >
+              Why us
             </div>
-            <p className="mt-2 text-sm text-muted-foreground" data-testid={`text-why-us-item-desc-${it.title.replace(/\s+/g, "-").toLowerCase()}`}>
-              {it.desc}
+            <h2
+              className="og-display mt-3 text-4xl font-black leading-[0.98] tracking-[-0.06em] sm:text-6xl"
+              data-testid="text-why-us-title"
+            >
+              Your snacks should
+              <br />
+              keep up with your life.
+            </h2>
+          </div>
+          <div className="lg:col-span-6">
+            <p
+              className="max-w-xl text-muted-foreground"
+              data-testid="text-why-us-subtext"
+              style={{ color: "rgb(255, 255, 0)" }}
+            >
+              No refined flour. No artificial flavors. No unnecessary additives. Just intelligent
+              indulgence.
             </p>
           </div>
-        ))}
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2" data-testid="grid-why-us">
+          {items.map((it) => (
+            <div
+              key={it.title}
+              className="og-card rounded-[28px] p-6"
+              data-testid={`card-why-us-${it.title.replace(/\s+/g, "-").toLowerCase()}`}
+            >
+              <div
+                className="og-display text-2xl font-black tracking-[-0.05em]"
+                data-testid={`text-why-us-item-title-${it.title.replace(/\s+/g, "-").toLowerCase()}`}
+              >
+                {it.title}
+              </div>
+              <p
+                className="mt-2 text-sm text-muted-foreground"
+                data-testid={`text-why-us-item-desc-${it.title.replace(/\s+/g, "-").toLowerCase()}`}
+                style={{ color: "rgb(255, 255, 0)" }}
+              >
+                {it.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -489,7 +465,7 @@ function EarlyAccess() {
           >
             <div className="grid gap-3">
               <label className="text-sm font-semibold" htmlFor="email" data-testid="label-email">
-                Email
+                Email (optional)
               </label>
               <input
                 id="email"
@@ -501,7 +477,7 @@ function EarlyAccess() {
               />
 
               <label className="mt-2 text-sm font-semibold" htmlFor="phone" data-testid="label-phone">
-                Phone (optional)
+                Phone 
               </label>
               <input
                 id="phone"
@@ -512,8 +488,8 @@ function EarlyAccess() {
                 data-testid="input-phone"
               />
 
-              <button type="submit" className="og-button-primary mt-3" data-testid="button-get-priority-access">
-                Get Priority Access <ArrowRight className="h-4 w-4" />
+              <button type="submit" className="og-button-primary mt-3" data-testid="button-get-priority-access" style={{color: "white",padding:"12px 12px"}}>
+                Get Priority Access
               </button>
 
               <p className="text-xs text-muted-foreground" data-testid="text-form-disclaimer">
@@ -539,11 +515,11 @@ function Footer() {
         </div>
 
         <div className="flex items-center gap-4 text-sm" data-testid="footer-links">
-          <a href="#" className="hover:opacity-70" data-testid="link-instagram">
+          {/* <a href="#" className="hover:opacity-70" data-testid="link-instagram">
             <Instagram className="h-4 w-4" />
             <span className="sr-only">Instagram</span>
-          </a>
-          <a href="mailto:hello@originalgoodness.co" className="hover:opacity-70" data-testid="link-email">
+          </a> */}
+          <a href="mailto:riyachaplot787@gmail.com" className="hover:opacity-70" data-testid="link-email">
             <Mail className="h-4 w-4" />
             <span className="sr-only">Email</span>
           </a>
